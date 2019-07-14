@@ -2,12 +2,13 @@
 
 Let's break skipgram model into steps to see how it converts words into vectors
 
- - Step 1
+- Step 1
   - Slide predefined windows to find match word pairs. The relationship should be 1 to 1 and let's assume there are totally m pairs in the form of (target word, close word).
 
 
- - Step 2
+- Step 2
   - Create input matrix X where X.shape is (m, vocab_size). Each row in X should be one hot encoding because it represents the target word.
+
 
 - Step 3
   - The hidden matrix is basically the word embedding matrix we try to generate, denoted as H. H.shape should be (vocab_size, embedding_size). The embeding_size could be anything ranging from 100 to 300, but research has shown large embedding_size may degrade the model performance.
